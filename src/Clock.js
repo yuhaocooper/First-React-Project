@@ -29,7 +29,7 @@ function Clock() {
 
   return(
     <div>
-     The time now is {date.toLocaleTimeString('en-US')}
+      <h1>The time now is {date.toLocaleTimeString('en-US')}</h1>
     </div>
   )
 }
