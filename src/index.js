@@ -4,10 +4,13 @@ import './styles.css'
 import {BrowserRouter as Router} from 'react-router-dom'
 
 import App from './App';
+import {ContextProvider} from './Context'
 
 ReactDOM.render(
   <Router>
-  <App/>
+    <ContextProvider>
+      <App/>
+      </ContextProvider>
   </Router>
   ,document.getElementById('root')
 );

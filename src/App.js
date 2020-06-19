@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from "./Home"
 import Clock from './Clock';
+import Stopwatch from './Stopwatch'
 import {Switch, Route, Link} from 'react-router-dom'
 
 function App() {
@@ -9,14 +10,18 @@ function App() {
       <nav>
         <Link to="/">Home</Link>
         <Link to="/Clock">Clock</Link>
+        <Link to="/stopWatch">Stopwatch</Link>
       </nav>
       <Switch>
-        <route exact path="/">
+        <Route exact path="/">
           <Home/>
-        </route>
-        <route>
-          <Clock path="/clock"/>
-        </route>
+        </Route>
+        <Route path ="/clock">
+          <Clock/>
+        </Route>
+        <Route path="/Stopwatch">
+          <Stopwatch/>
+        </Route>
       </Switch>
     </div>
   );

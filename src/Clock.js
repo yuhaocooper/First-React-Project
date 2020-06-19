@@ -18,14 +18,13 @@ import App from './App'
 
 function Clock() {
   var date = new Date()
-  const [dateState, setDateState] = useState('hello')
+  const [dateState, setDateState] = useState('')
+  const [clockState, setClockState] = useState(false)
 
   useEffect(() => {
-    const interval = setInterval(() => {
-        setDateState(date)
-      },50);
+      const interval = setInterval(() => {setDateState(date)},1000)
       return () => clearInterval(interval)
-  })
+  },)
 
   return(
     <div>
@@ -33,5 +32,7 @@ function Clock() {
     </div>
   )
 }
+
+//<button onClick={()=>{setClockState(!clockState)}}>{clockState ? 'Stop Clock' : 'Start Clock'}</button>
 
 export default Clock
