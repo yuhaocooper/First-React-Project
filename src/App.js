@@ -4,15 +4,16 @@ import Clock from './Clock';
 import Stopwatch from './Stopwatch'
 import Practice from './Practice'
 import {Switch, Route, Link} from 'react-router-dom'
+import './styles.css'
 
 function App() {
   return (
     <div>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/Clock">Clock</Link>
-        <Link to="/stopWatch">Stopwatch</Link>
-        <Link to="/Practice">Practice</Link>
+      <nav className='Nav'>
+        <Link to="/" className="Links">Home</Link>
+        <Link to ="/Clock" className="Links">Clock</Link>
+        <Link to="/stopWatch" className="Links">Stopwatch</Link>
+        <Link to="/Practice" className="Links">Practice</Link>
       </nav>
       <Switch>
         <Route exact path="/">
