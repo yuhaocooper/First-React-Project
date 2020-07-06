@@ -10,8 +10,36 @@
   padding: 10px 10px;
 }
 
+
+.bg-black{
+  background-color: #16111c;
+  letter-spacing: 0.03rem;
+}
+
+.container{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .Nav{
-  background-color: #333;
+
+}
+
+#header{
+  position: relative;
+  z-index:10;
+  height: 82px;
+  width: 100%;
+}
+
+body {
+  background-color: white;
+  color: black;
   margin: 0px;
-  padding: 10px;
+  font-family: Arial;
+  text-align: center;
+  height: 100%;
 }

@@ -9,12 +9,16 @@ import './styles.css'
 function App() {
   return (
     <div>
-      <nav className='Nav'>
-        <Link to="/" className="Links">Home</Link>
-        <Link to ="/Clock" className="Links">Clock</Link>
-        <Link to="/stopWatch" className="Links">Stopwatch</Link>
-        <Link to="/Practice" className="Links">Practice</Link>
-      </nav>
+      <header id="header" class ="bg-black" role = "banner">
+        <div class="container">
+          <nav className='Nav'>
+            <Link to="/" className="Links">Home</Link>
+            <Link to ="/Clock" className="Links">Clock</Link>
+            <Link to="/stopWatch" className="Links">Stopwatch</Link>
+            <Link to="/Practice" className="Links">Practice</Link>
+          </nav>
+        </div>
+      </header>
       <Switch>
         <Route exact path="/">
           <Home/>
